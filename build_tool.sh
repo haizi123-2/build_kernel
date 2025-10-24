@@ -92,7 +92,7 @@ CROSS_COMPILE_ARM32=$gcc_32_path"
 
 
 
-cd kernel_src
+cd kernel_qcom_sdm845
 clean
 build_kernel
 cp ./out/arch/arm64/boot/Image.gz-dtb Image.gz-dtb
