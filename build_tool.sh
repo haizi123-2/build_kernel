@@ -48,7 +48,7 @@ clean(){
 build_kernel(){
 	export KBUILD_BUILD_USER="zahi0"  
 	export KBUILD_BUILD_HOST="zahi0-server"  
-	make $args sdm845-perf_defconfig #修改配置文件
+	make $args ineage_ oneplus5_defconfig #修改配置文件
 	if [ $? -ne 0 ]; then
       		exit 0
         fi
@@ -92,7 +92,7 @@ CROSS_COMPILE_ARM32=$gcc_32_path"
 
 
 
-cd kernel_qcom_sdm845
+cd android_kernel_oneplus_msm8998
 clean
 build_kernel
 cp ./out/arch/arm64/boot/Image.gz-dtb Image.gz-dtb
